@@ -1,0 +1,51 @@
+.nav {
+    background-color: #333;
+    padding: 0;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    transition: all 0.3s ease; /* Transición suave */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    font-weight: 500; /* Peso de la fuente */
+}
+
+.nav-links a:hover {
+    background-color: #7f0bec;
+    color: #fff;
+    border-color: #7f0bec; /* Borde coincide con el fondo en hover */
+}
+
+.nav-links a:active {
+    background-color: #2e14a3;
+    color: #fff;
+    border-color: #2e14a3; /* Borde coincide con el fondo al hacer clic */
+}
+
+.nav-links a.active {
+    background-color: #555;
+    color: #fff;
+    border-color: #555; /* Borde del enlace activo */
+}
+
+.nav-links a:focus {
+    outline: none;
+    border-color: #fff; /* Borde blanco en enfoque */
+}
